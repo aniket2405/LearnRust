@@ -19,11 +19,13 @@ impl Sheep {
         self.naked
     }
 
-    fn shear(&mut self) {
+    fn shear(&mut self) 
+    {
         if self.is_naked() {
             // Implementor methods can use the implementor's trait methods.
             println!("{} is already naked...", self.name());
-        } else {
+        } 
+        else {
             println!("{} gets a haircut!", self.name);
 
             self.naked = true;
